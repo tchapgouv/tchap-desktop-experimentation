@@ -24,7 +24,7 @@ Le format de l’icône dépend du **système cible** :
 - Linux : `.png` disponible [ici](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/assets/tchap-logo.png)
 - Windows : `.ico` disponible [ici](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/assets/tchap-logo.ico)
 
-Pour générer le client, se placer dans un répertoire contenant uniquement l'image, puis taper la commande suivante :
+Pour générer le client, se placer dans un répertoire contenant uniquement le dossier `assets/`, puis taper la commande suivante :
 
 ``` shell
 nativefier --name "Tchap" --platform "windows" --arch "x64" --app-copyright "DINUM/MinArm" --conceal --icon "./assets/tchap-logo.ico" --counter --insecure --internal-urls ".*?tchap\.gouv\.fr.*?" --maximize --disable-context-menu --disable-dev-tools --single-instance --tray "https://www.tchap.gouv.fr/"
