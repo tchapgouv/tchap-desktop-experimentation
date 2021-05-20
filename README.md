@@ -27,7 +27,7 @@ Le format de l’icône dépend du **système cible** :
 Pour générer le client, se placer dans un répertoire contenant uniquement le dossier `assets/`, puis taper la commande suivante :
 
 ``` shell
-nativefier --name "Tchap" --platform "windows" --arch "x64" --app-copyright "DINUM/MinArm" --conceal --icon "./assets/tchap-logo.ico" --counter --insecure --internal-urls ".*?tchap\.gouv\.fr.*?" --maximize --disable-context-menu --disable-dev-tools --single-instance --tray "https://www.tchap.gouv.fr/"
+nativefier --name "Tchap" --platform "windows" --arch "x64" --app-copyright "DINUM/MinArm" --conceal --icon "./assets/tchap-logo.ico" --insecure --internal-urls ".*?tchap\.gouv\.fr.*?" --maximize --disable-context-menu --disable-dev-tools --single-instance --tray "https://www.tchap.gouv.fr/"
 ```
 
 <br />
@@ -46,23 +46,37 @@ Les choix possibles de l'option `--arch` sont les suivants :
 
 Certaines options utilisées dans la commande ci-dessus sont les suivantes :
 - `--name` : Le nom de l'application
-- `--icon` : Le logo de l'application
 - `--platform` : La plateforme cible
 - `--arch` : L'architecture cible
+- `--icon` : Le logo de l'application
+- `--conceal` : Package le code dans une archive
+- `--insecure` : Permet l'utilisation de MixedContent
+- `--internal-urls` : Permet le hook d'urls
 - `--maximize` : Lance l'application à la taille de l'écran
 - `--disable-context-menu` : Désactive les menus par défaut de la fenêtre
+- `--disable-dev-tools` : Désactive la console de développement
 - `--single-instance` : Permet d'autoriser seulement une instance. Si l'application est relancée, elle se réouvrira
 - `--tray` : Permet à l'application d'être réduite dans la barre des tâches
 
-Il est également possible d'utiliser les scripts suivants :
+## Utilisation des scripts
+
+Il est également possible de générer le client à l'aide de scripts :
 - Linux : [`tchap-desktop.sh`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.sh)
 - Windows : [`tchap-desktop.bat`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.bat)
 
-<br />
+Le script windows `.bat` nécessite d'avoir PowerShell d'installé pour être utilisé.
+
+Ces scripts s'occupent de l'intégralité de la génération du client (récupération des assets, génération du client).
+
+Placez-vous dans un répertoire vide et lancez le script.
+
+## Autre
 
 **Plus d'informations sur la commande à l'aide de `nativefier --help`**
 
-Documentation hors ligne en pdf : [`tchap-desktop.pdf`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.pdf)
+<br />
+
+Documentation hors-ligne en pdf : [`tchap-desktop.pdf`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.pdf)
 
 <br />
 <br />
