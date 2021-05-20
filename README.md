@@ -58,20 +58,25 @@ Certaines options utilisées dans la commande ci-dessus sont les suivantes :
 - `--single-instance` : Permet d'autoriser seulement une instance. Si l'application est relancée, elle se réouvrira
 - `--tray` : Permet à l'application d'être réduite dans la barre des tâches
 
-Il est également possible d'utiliser les scripts suivants :
+## Utilisation des scripts
+
+Il est également possible de générer le client à l'aide de scripts :
 - Linux : [`tchap-desktop.sh`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.sh)
 - Windows : [`tchap-desktop.bat`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.bat)
 
-Le script windows s'occupe de l'intégralité de la génération du client (récupération des images, génération du client).
+Le script windows `.bat` nécessite d'avoir PowerShell d'installé pour être utilisé.
 
-<br />
+Ces scripts s'occupent de l'intégralité de la génération du client (récupération des assets, génération du client).
+
+Placez-vous dans un répertoire vide et lancez le script.
+
+## Autre
 
 **Plus d'informations sur la commande à l'aide de `nativefier --help`**
 
 <br />
-<br />
 
-Documentation hors ligne en pdf : [`tchap-desktop.pdf`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.pdf)
+Documentation hors-ligne en pdf : [`tchap-desktop.pdf`](https://raw.githubusercontent.com/dinsic-pim/tchap-desktop/main/tchap-desktop.pdf)
 
 <br />
 <br />
