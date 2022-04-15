@@ -3,7 +3,7 @@
 # Tchap client lourd
 
 Ce guide est une expérimentation sur comment générer un client lourd de Tchap.
-L'équipe Tchap ne supporte pas cette solution dans un environement de production et recommande fortement de procéder à une analyse de risques lié à l'usage d'Electron et NodeJS sur un poste desktop.
+L'équipe Tchap ne supporte pas cette solution dans un environement de production et recommande fortement de procéder à une analyse de risques lié à l'usage d'Electron et NodeJS.
 
 La génération s'effectue avec [nativefier](https://github.com/jiahaog/nativefier), un module [nodejs](https://nodejs.org/fr/) qui permet d'embarquer un site web dans un émulateur chrome.
 
